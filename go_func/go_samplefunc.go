@@ -11,7 +11,7 @@ struct rectangle
     }
     float length
     float high
-}
+}test;
 */
 type rectangle struct {
 	length float64
