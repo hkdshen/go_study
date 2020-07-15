@@ -30,7 +30,10 @@ func (n *Node) IterateTreeFunc (f func(*Node)) {
 }
 
 func (n *Node) IterateTree (){
+	nodeCount :=0
 	n.IterateTreeFunc(func (n *Node){
+		nodeCount++
 		n.printfValue()
 	})
+	fmt.Printf("node count:%d\n", nodeCount)
 }
